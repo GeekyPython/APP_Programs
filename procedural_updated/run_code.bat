@@ -1,0 +1,3 @@
+call code ./
+stop
+cls

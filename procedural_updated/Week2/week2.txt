@@ -1,0 +1,100 @@
+Problem 1: 
+Lily has a chocolate bar that she wants to share it with Ron for his birthday. Each of the squares has an integer on it. She decides to share a contiguous segment of the bar selected such that the length of the segment matches Ron's birth month and the sum of the integers on the squares is equal to his birth day. You must determine how many ways she can divide the chocolate.
+Consider the chocolate bar as an array of squares,s=[2,2,1,3,2]. She wants to find segments summing to Ron's birth day,d=4 with a length equalling his birth month,m=2 . In this case, there are two segments meeting her criteria:[2,] and [1,3].
+
+Problem 2:
+You have been asked to help study the population of birds migrating across the continent. Each type of bird you are interested in will be identified by an integer value. Each time a particular kind of bird is spotted, its id number will be added to your array of sightings. You would like to be able to find out which type of bird is most common given a list of sightings. Your task is to print the type number of that bird and if two or more types of birds are equally common, choose the type with the smallest ID number.
+For example, assume your bird sightings are of types arr =[1,1,2,2,3]. There are two each of types 1 and  2, and one sighting of type 3. Pick the lower of the two types seen twice: type 1 . 
+
+Problem 3:
+Anna and Brian are sharing a meal at a restuarant and they agree to split the bill equally. Brian wants to order something that Anna is allergic to though, and they agree that Anna won't pay for that item. Brian gets the check and calculates Anna's portion. You must determine if his calculation is correct.
+For example, assume the bill has the following prices:bill =[2,4,6]. Anna declines to eat item k= bill[2] which costs 6. If Brian calculates the bill correctly, Anna will pay (2+4)/2 =3 . If he includes the cost of bill[2], he will calculate (2+4+6)/2=6 . In the second case, he should refund 3 to Anna.
+
+Problem 4:
+A Discrete Mathematics professor has a class of students. Frustrated with their lack of discipline, he decides to cancel class if fewer than some number of students are present when class starts. Arrival times go from on time (arrivalTime<=0) to arrived late (arrivalTime>0).
+
+Given the arrival time of each student and a threshhold number of attendees, determine if the class is canceled.
+
+Problem 5:
+A jail has a number of prisoners and a number of treats to pass out to them. Their jailer decides the fairest way to divide the treats is to seat the prisoners around a circular table in sequentially numbered chairs. A chair number will be drawn from a hat. Beginning with the prisoner in that chair, one candy will be handed to each prisoner sequentially around the table until all have been distributed.
+The jailer is playing a little joke, though. The last piece of candy looks like all the others, but it tastes awful. Determine the chair number occupied by the prisoner who will receive that candy.
+For example, there are 4 prisoners and 6 pieces of candy. The prisoners arrange themselves in seats numbered 1 to 4. Let's suppose two is drawn from the hat. Prisoners receive candy at positions 2,3,4,1,2,3. The prisoner to be warned sits in chair number 3. 
+
+Problem 6:
+You are given a number of sticks of varying lengths. You will iteratively cut the sticks into smaller sticks, discarding the shortest pieces until there are none left. At each iteration you will determine the length of the shortest stick remaining, cut that length from each of the longer sticks and then discard all the pieces of that shortest length. When all the remaining sticks are the same length, they cannot be shortened so discard them.
+Given the lengths of n sticks, print the number of sticks that are left before each iteration until there are none left.
+For example, there are n=3 sticks of lengths arr=[1,2,3]. The shortest stick length is 1, so we cut that length from the longer two and discard the pieces of length 1. Now our lengths are arr=[1,2]. Again, the shortest stick is of length 1, so we cut that amount from the longer stick and discard those pieces. There is only one stick left, arr=[1], so we discard that stick. Our lengths are [3,2,1]. 
+Example:
+input:
+6
+5 4 4 2 2 8
+Output
+sticks-length        length-of-cut   sticks-cut
+5 4 4 2 2 8             2               6
+3 2 2 _ _ 6             2               4
+1 _ _ _ _ 4             1               2
+_ _ _ _ _ 3             3               1
+_ _ _ _ _ _           DONE            DONE
+
+Problem 7:
+Emma is playing a new mobile game that starts with consecutively numbered clouds. Some of the clouds are thunderheads and others are cumulus. She can jump on any cumulus cloud having a number that is equal to the number of the current cloud plus 1 or 2. She must avoid the thunderheads. Determine the minimum number of jumps it will take Emma to jump from her starting postion to the last cloud. It is always possible to win the game.
+For each game, Emma will get an array of clouds numbered 0,if they are safe or  1 if they must be avoided. For example, c=[0,1,0,0, 0,1,0 ]indexed from 0 to 6. The number on each cloud is its index in the list so she must avoid the clouds at indexes 1 and 5. She could follow the following two paths: 0->2->4->6 or 0->2->3->4->6 . The first path takes 3 jumps while the second takes 4.
+
+Problem 8:
+Given a sequence of integers a, a triplet(a[i],a[j],a[k] is beautiful if:
+i<j<k
+a[j]-a[i]=a[k]-a[j] =d
+Given an increasing sequence of integers and the value of d, count the number of beautiful triplets in the sequence.
+For example, the sequence arr=[2,2,3,4,5] and d=1. There are three beautiful triplets, by index: [i,j,k]=[0,2,3],[1,2,3],[2,3,4]. To test the first triplet, arr[j]-arr[i] =3-2 =1 and arr[k] -arr[j]=4-3=1 .
+
+
+
+Problem 9:
+A gene is represented as a string of length n(where n is divisible by 4), composed of the letters A, C, T, and G. It is considered to be steady if each of the four letters occurs exactly times n/4. For example GACT, and AAGTGCCT are both steady genes.
+Bear Limak is a famous biotechnology scientist who specializes in modifying bear DNA to make it steady. Right now, he is examining a gene represented as a string gene. It is not necessarily steady. Fortunately, Limak can choose one (maybe empty) substring of gene and replace it with any string of the same length.
+Modifying a large substring of bear genes can be dangerous. Given a string gene , can you help Limak find the length of the smallest possible substring that he can replace to make gene a steady gene?
+Note: A substring of a string s is a subsequence made up of zero or more contiguous characters of s.
+As an example, consider gene =ACTGAAAG. The substring AA just before or after G can be replaced with CT or TC. One selection would create ACTGACTG.
+
+Problem 10:
+About 2000 years ago there was some war, and during one of its battles defendants were blocked by attackers in the cave.
+To avoid capture they decided to stand in a circle and kill each third until only one person remains - who was supposed to commit suicide - though he eventually prefer to surrender to enemies. The problem is called after this person - you may read the full story of Josephus and get math explanation of the problem in wikipedia article
+Your task is to determine for given number of people N and constant step K the position of a person who remains the last - i.e. the safe position. For example if there are 10 people and they eliminate each third:
+N = 10, K = 3
+1st round: 1 2 (3) 4 5 (6) 7 8 (9) 10
+2nd round:                            1 (2) 4 5 (7) 8 10
+3rd round:                                                (1) 4 5 (8) 10
+4th round:                                                               4 (5) 10
+5th round:                                                                        4 (10)
+Problem 11:
+This is an old game for two players, often played with paper and pen. Modern version is also known as Mastermind.
+First player, let it be Alice - chooses a secret 4-digit code (like 1492), with all digits different.
+The second player, let it be Barbara - makes several attempts to guess this code. She can offer any combinations of 4 digits (without repetitions) - and for each attempt the Alice should answer with a hint.
+The hint consists of two values:
+first tells how many digits are guessed correctly and are in correct positions;
+second tells how many digits are guessed correctly but are in wrong positions.
+For example, if the secret value is 1492 and Barbara's guess is 2013 - Alice should answer with 0-2.
+And if the guess is 1865, then the hint would be 1-0.
+This game could also be played with 4-letter words, but in this case it may require the knowledge of the language.
+Your goal is to write a program which calculates the values which should be told as a hint to the given guess.
+Input data will contain the secret value and the number of guesses in the first line.
+Second line will contain the specified amount of guesses.
+Answer should contain hints for these guesses, they should be given in format X-Y and separated with spaces.
+Problem 12:
+Two friends, Alan and Bob are engaged in a deathly duel. They agreed to stand in front of each other and shoot until one of them is mortally wounded. Since they have only one pistol, they will shoot in turns. Casting lots determined that Alan is first to fire. Before duelling they want to get life insurance. Insurance manager then needs to determine what are their chances to die, to calculate proper insurance cost.
+You are to help the manager in his calculations. You will be given the probability for both duellers to hit and hurt opponent critically with a single shot - and you asked to write a program which will tell Alan's chances to win (then Bob's chances to win could be calculated by manager himself as Alan's chances to die).
+Input data will contain the number of test-cases in first line.
+Next lines will contain two numbers pA and pB each - the chance to kill opponent with a shot for Alan and Bob respectively, expressed in percents (so the values would be integer).
+Answer should contain the chance for Alan to win (and for Bob to die) in percents, rounded to nearest integer. Separate several answers with spaces.
+input data:
+2
+30 50
+20 15
+
+answer:
+46 63
+Problem 13:
+Given an array of n integers where each value represents number of chocolates in a packet. Each packet can have variable number of chocolates. There are m students, the task is to distribute chocolate packets such that:
+Each student gets one packet.
+The difference between the number of chocolates in packet with maximum chocolates and packet with minimum chocolates given to the students is minimum. 
+
