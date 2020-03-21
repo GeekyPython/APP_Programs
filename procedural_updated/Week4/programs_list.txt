@@ -1,11 +1,11 @@
 1. For the given input numbers = {2, 4, 6, 8}, use map () function to double all the input numbers and double it again using python program
 2. Write the python program to add two lists of input [1,2,3,4,5,6] and [4,6,12,3,2,1] using map and lambda and then perform multiplication for the resultant value off add with the input list [4,2,8,3,2,1]
-3. Get the List of strings as input and list of strings individually as character using map () function using python program. 
+  3. Get the List of strings as input and list of strings individually as character using map () function using python program. 
 4. Write the python program the calculate cube of a number by using def () and lambda () function. 
 5. Write the python program to return the numbers divisible by 4 from the input list = [21, 24, 12, 34, 10, 15, 41] using lambda and filter function. 
 6. Write the python program to get the multiplication and sum from the list of input = [10, 24, 34, 42, 19] using lambda and reduce function. 
 7. Write the python program to add two lists of input [1,2,3,4,5,6] and [4,6,12,3,2,1] using map and lambda and then perform division for each subsequent value in each list and store the resultant value as a list ‘X’ and the ‘X’ each value is modulo with 2 and store it as ‘Y’ list. 
-8. Write the python program to select the sequence of number less than 2 from the input list = [4, 5, 1, -2,       -3, 7, 9] using filter function. 
+8. Write the python program to select the sequence of number less than 2 from the input list = [4, 5, 1, -2,-3, 7, 9] using filter function. 
 9. Write the python program to calculate Fahrenheit and Celsius using map () function and print the temperature in Fahrenheit and Celsius. 
 10. Write the python program to calculate the sequence of the first 11 Fibonacci numbers and filter out first the odd and then the even elements from the sequence of the first 11 Fibonacci numbers. 
 
